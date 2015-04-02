@@ -1,0 +1,108 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res}
+% the margin option causes section titles to appear to the left of body text
+\textwidth=5.2in % increase textwidth to get smaller right margin
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+\begin{document}
+
+\name{Mark Tozzi\\[12pt]} % the \\[12pt] adds a blank line after name
+
+\address{1404 Duckwall Road \\ Berkeley Springs, WV 25411  \\
+        (917) 678-3636 \\ mark.tozzi@gmail.com}
+
+
+\begin{resume}
+
+\section{Summary}
+Working in a startup environment, I have recently been involved in most 
+aspects of web application development, from data modeling and analytics 
+to template design and third party integration. Across all aspects of 
+software development, I bring a strong “can do” attitude. I work hard to 
+be the go to problem solver on any team, and pride myself on offering options 
+and solutions instead of excuses. My core strength is in back-end data 
+processing, including OLTP and OLAP applications, and I look forward to a 
+position where I can continue to develop those skills.
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Computer \\ Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{Languages:} & Python, Perl, SQL, Java, C, Shell scripting,
+     familiar with many others \\
+
+     \underline{Databases:} & Postgres, MySQL, Oracle, MS Sql Server \\
+     \underline{No-sql Systems:} & Redis, Hadoop Map Reduce, Hive, Pig
+   \end{tabular}
+
+\section{Experience}
+ {\bf Senior Developer,} Keep.com, New York, NY \hfill 2010--Present
+\begin{itemize}
+  \item Worked in small team environment to develop and support consumer facing web applications for New York based startup
+  \item Developed data models in Python to interface with both Postgres Sql and Redis data stores
+  \item Designed and implemented custom internal A/B testing framework, including integration with existing Mixpanel based reporting for data collection
+  \item Led successful effort to integrate Etsy's Statsd system as a central broker for tracking internal metrics
+  \item Designed and implemented autocomplete system using redis sorted sets with multi- tiered sorting based on a custom algorithm
+  \item Used natural language processing tools, including Bayesian classifiers, to analyze and extract metadata about commercial offers
+  \item Built “accounting style” active user tracking system using Redis bit sets for minimal data footprint
+  \item Worked with team to migrate from pure Redis backend to hybrid Redis/Postgres backend, with no data loss and minimal downtime
+  \item Practiced Test Driven Development (TDD) resulting in the lowest defect rate on the team; converted several other team members to the TDD methodology
+  \item Led daily “standup style” meetings for dev team to facilitate communication within the team; provided a high level summary report to management daily
+  \item Participated in various Agile development techniques, including Scrum and Kanban
+  \item Tracked critical production bugs using Sentry, delegating bug fix work to the rest of the team as appropriate
+  \item Provided technical support to team on Mercurial related issues, including resolving difficult merges
+\end{itemize}
+
+{\bf Developer,} About.com, New York , NY \hfill  2006--2010
+\begin{itemize}
+    \item Developer on Metrics team
+      \begin{itemize}
+          \item Supported a custom built site usage tracking system which processed over 60 Gigabytes of data daily from 90 servers in 3 data center
+          \item Designed and implemented a major new metrics system using the Apache Hadoop framework, Apache Hive and Map Reduce to feed data into a MySQL data warehouse
+          \item Wrote Mapper and Reducer functions in java for hadoop framework, including junit based unit tests
+          \item Developed and maintained Perl apache log parsing layer and Sql Server data warehouse
+          \item Provided data feeds for business critical applications including inventory availability and payroll
+          \item Resolved data issues on reports viewed by senior management and over 600 writers
+          \item Detected and corrected for traffic anomalies due to spider activity or errors using both Unix command line tools and custom scripts
+          \item Worked with managers and other developers to provide complex data to downstream applications
+          \item Worked with another developer in pair programming style to optimized Perl based Apache log parser to achieve over 50\% reduction in running time
+      \end{itemize}
+    \item Associate Developer on Sales Order System
+      \begin{itemize}
+          \item Maintained and developed new features on web based order tracking system
+          \item Developed new features and system components using Perl and CGI to build web based interfaces to Oracle back end database
+          \item Primary responsibilities include CRM and Billing Forecasting sub-systems
+          \item Developed custom Perl scripts and modules on unix and windows platforms
+          \item Built and maintained database triggers in PL/SQL to ensure data consistency and integrity
+          \item Supported over 600 users across three divisions (About.com, NYTimes.com, Boston.com)
+          \item Designed and implemented redesign of customer management component to increase functionality and virtually eliminate support on that component.
+          \item Worked with users and project manager to collect and define user requirements and build detailed specifications
+      \end{itemize}
+\end{itemize}
+
+{\bf Recruiter,} Base One Technologies, New Rochelle, NY \hfill 2004--2005
+\begin{itemize}
+  \item Research and analyze technology options for building a web based front end to a MS Excel spreadsheet for candidate tracking. Recommended Perl based CGI front end to CSV (flat text) file databases, which could then be read by Excel
+  \item Screen candidates based on technical background to determine qualifications
+  \item Conduct technical interviews of candidates over the phone
+  \item Designed Excel spreadsheet for calculating profit margins that became widely used though the office
+  \item Apply excellent organizational skills to maintain the primary collection of candidate information on several projects
+\end{itemize}
+
+{\bf Tutor,} Polytechnic University, Brooklyn, NY \hfill 1998--2004
+\begin{itemize}
+  \item Tutored students in Computer Science and Physics
+  \item Maintained weekly progress logs of student’s performance and monitored students for academic difficulties; referred students to counseling staff as needed
+\end{itemize}
+
+\section{Education}
+Bachelor of Science in Computer Science, Polytechnic University, Brooklyn New
+York, 2003
+
+\end{resume}
+\end{document}
+
+
+
