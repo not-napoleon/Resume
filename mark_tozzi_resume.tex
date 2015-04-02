@@ -6,13 +6,24 @@
 \textwidth=5.2in % increase textwidth to get smaller right margin
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor = blue}
+
+% Center align address.  See http://tex.stackexchange.com/questions/94204/using-the-res-cls-latex-file-how-do-i-centre-the-address
+\makeatletter
+\def\@tablebox#1{\begin{tabular}[t]{@{}c@{\extracolsep{\fill}}}#1\end{tabular}}
+\makeatother
+
 
 \begin{document}
 
-\name{Mark Tozzi\\[12pt]} % the \\[12pt] adds a blank line after name
+\name{Mark Tozzi}
 
 \address{1404 Duckwall Road \\ Berkeley Springs, WV 25411  \\
-        (917) 678-3636 \\ mark.tozzi@gmail.com}
+(917) 678-3636 \\
+\href{mailto:mark.tozzi@gmail.com}{mark.tozzi@gmail.com}
+$\bullet$ \href{https://github.com/not-napoleon}{github: not-napoleon}
+$\bullet$ \href{https://twitter.com/not_napoleon}{twitter: not\_napoleon} }
 
 
 \begin{resume}
