@@ -17,8 +17,7 @@
 
 \name{Mark Tozzi}
 
-\address{1404 Duckwall Road \\ Berkeley Springs, WV 25411  \\
-(917) 678 3636 \\
+\address{Baltimore, MD --- (917) 678 3636 \\
 \href{mailto:mark.tozzi@gmail.com}{mark.tozzi@gmail.com}
 $\bullet$ \href{https://github.com/not-napoleon}{github: not-napoleon}
 $\bullet$ \href{https://twitter.com/not_napoleon}{twitter: not\_napoleon} }
@@ -27,30 +26,42 @@ $\bullet$ \href{https://twitter.com/not_napoleon}{twitter: not\_napoleon} }
 \begin{resume}
 
 \section{Summary}
-I am a software engineer with ten years experience, the last six working fully
-remote, in the data engineering space.  I've focused on building high
-throughput data pipelines for a range of applications and shapes of data.  I
-have been involved in every step of developing a data-driven application, from
-architecture and planning through implementation to maintenance and
+I am a software engineer with over a decade of experience, most of it working
+fully remote, in the data engineering space.  I've focused on building high
+throughput data pipelines for a range of applications and shapes of data.
+I have been involved in every step of developing a data-driven application,
+from architecture and planning through implementation to maintenance and
 monitoring.  I love solving hard problems and finding ways to make data
 available to users in a meaningful way.
 
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
-\section{Computer \\ Skills}
+\section{Software \& \\ Languages}
    \begin{tabular}{l p{3in}}
-     \underline{Languages:} & Python, Perl, SQL, Java, C, Shell scripting\\
-     \underline{Databases:} & Postgres, MySQL, Oracle, MS SQL Server \\
-     \underline{No-sql Systems:} & Kafka, Spark, Hadoop, Redis
+     \underline{Languages:} & Python, Perl, SQL, Java, Shell scripting\\
+     \underline{Databases:} & Postgres, MySQL, Redis, MS SQL Server \\
+     \underline{Other Tools:} & Kafka, Spark, Hadoop, Lucene
    \end{tabular}
 
 \raggedright{}
 \section{Experience}
- {\bf Platform Developer,} Rocana, San Francisco, CA \hfill 2015--Present
+ {\bf Senior Developer,} Solar Winds, Remote \hfill November 2017--Present
+    \begin{itemize}
+        \item Worked with teams from multiple acquired companies to build out
+            a unified cloud offering.
+        \item Worked on metrics ingestion back end in Java, using DropWizard
+            for REST endpoints and gRPC for internal calls.
+        \item Maintained and expanded legacy ETL tool for Amazon CloudWatch
+            metrics.
+        \item Standardized billing logic across multiple components.
+    \end{itemize}
+ {\bf Platform Developer,} Rocana, Remote \hfill November 2015--October 2017
 \begin{itemize}
-    \item Worked on a small, fully remote, team to build a customized search
-        engine, backed by Lucene over HDFS
     \item Collaborated with a fully remote team spanning four timezones
-    \item Built and debugged ETL pipeline to get records from Kafka to Lucene
+    \item Worked on distributed full text search system using time sharded
+        Lucene indexes stored in HDFS
+    \item Built and debugged ETL pipeline to ingest records from Kafka
+        and index them into Lucene
+    \item Forked and maintained Solr HDFS classes, including the BlockCache
     \item Used both code analysis and log analysis techniques to debug subtle
         threading issues in highly multi-threaded, callback based, architecture
     \item Employed pair programming techniques working with teammates to debug
@@ -65,7 +76,7 @@ available to users in a meaningful way.
         and plan milestone scopes
 \end{itemize}
 
- {\bf Senior Developer,} Keep.com, New York, NY \hfill 2012--2015
+ {\bf Senior Developer,} Keep.com, Remote \hfill 2012--2015
 \begin{itemize}
   \item Worked remotely in small team environment to develop and support
       consumer facing web applications for New York based startup
@@ -96,7 +107,7 @@ available to users in a meaningful way.
   \item Mentored team members in code style and design
 \end{itemize}
 
-{\bf Senior Analytics Engineer,} Adkeeper Networks, New York, NY \hfill  2010--2012
+{\bf Senior Analytics Engineer,} Adkeeper Networks, Remote \hfill  2010--2012
 \begin{itemize}
   \item Built batch processing analytics system based on Hadoop, using Pig
       scripts for ETL operations.
@@ -104,8 +115,6 @@ available to users in a meaningful way.
       export of data.
   \item Diagnosed and helped to solve operational problems with delivery of
       tens of gigabytes of log data from several systems
-  \item Built pipeline for extracting offer information from emails using
-      Thoonk job queue and Python text processing tools.
 \end{itemize}
 
 {\bf Developer,} About.com, New York, NY \hfill  2006--2010
@@ -121,16 +130,9 @@ available to users in a meaningful way.
     MySQL databases
   \item Provided data feeds for business critical applications including
     inventory availability and payroll
-  \item Detected and corrected traffic anomalies due to spider activity or
-    errors using both Unix command line tools and custom scripts
   \item Built and maintained database triggers in PL/SQL to ensure data
     consistency and integrity
   \item Supported over 600 users across three divisions
-    (\href{http://www.about.com}{About.com},
-    \href{http://www.nytimes.com}{NYTimes.com},
-    \href{http://www.boston.com}{Boston.com})
-  \item Redesigned and implemented customer management component to
-    increase functionality and virtually eliminate support on that component
   \item Collaborated with users and project manager to define project requirements
       and build detailed specifications
 \end{itemize}
@@ -138,9 +140,6 @@ available to users in a meaningful way.
 \section{Education}
 Bachelor of Science in Computer Science, Polytechnic University, Brooklyn New
 York, 2003
-
-\section{References}
-Available Upon Request
 
 \end{resume}
 \end{document}
