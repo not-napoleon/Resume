@@ -19,14 +19,14 @@
 
 \address{Baltimore, MD $\bullet$ (917) 678 3636 \\
 \href{mailto:mark.tozzi@gmail.com}{mark.tozzi@gmail.com}
-$\bullet$ github: \href{https://github.com/not-napoleon}{not-napoleon}
+$\bullet$ GitHub: \href{https://github.com/not-napoleon}{not-napoleon}
 }
 
 
 \begin{resume}
 
 \section{Summary}
-I am a software engineer two decades of experience, most of it working
+I am a software engineer with two decades of experience, most of it working
 fully remote, in the data engineering space.  I've focused on building high
 throughput data pipelines for a range of applications and shapes of data.
 I have been involved in every step of developing a data-driven application,
@@ -38,109 +38,108 @@ available to users in a meaningful way.
 \section{Software \& \\ Languages}
    \begin{tabular}{l p{3in}}
      \underline{Languages:} & Java, Python, SQL, Shell scripting \\
-     \underline{Databases:} & Postgres, MySQL, Redis, Elasticsearch \\
-     \underline{Other Tools:} & Kafka, Hadoop, Lucene
+     \underline{Data storage and processing:} & Elasticsearch, Lucene, Postgres, Kafka, Redis \\
+     \underline{Other Tools:} & Cursor AI, Eclipse MAT
    \end{tabular}
 
 \raggedright{}
 \section{Experience}
 {\bf Senior Developer (Remote)} \\
-    Elasticsearch B.V \hfill 2018--2026
+    Elasticsearch B.V. \hfill 2018--2026
     \begin{itemize}
         \item Worked as a Java developer on Elasticsearch, a distributed search
-            engine, on the analitics and aggregations areas.  My work included
-            developing new features, extending existing features, fixing bugs
-            and supporting our users.
-        \item Collaborated with teammates in many timezones and areas of the 
-            product
+            engine, with a focus on logs and metrics query processing and optimization. 
+        \item My work included developing new aggregations, supporting new data types,
+            query optimization, and addressing customer issues.
+        \item Worked on developing a new query language, ESQL, and supporting
+            compute layer, including logical and physical layer optimization rules.
+        \item Used JUnit parametrized testing to build out a robust randomized
+            testing framework for ESQL scalar functions, which was used as the
+            model for later testing.
         \item Elasticsearch is open source.  My work was done mostly
             \href{https://github.com/elastic/elasticsearch/pulls?q=is%3Apr+author%3Anot-napoleon+is%3Aclosed}{in
-            the open}.  I also reviewed and merged community PRs as needed
-        \item Mentored new hires and other co-workers as part of a formal 
-            mentoring program
-        \item Wrote detailed JavaDoc and internal documentation which was used
-		by other developers as AI Agent formulas for complex coding
-	        tasks.
-        \item Responded to support escalations and incidents, including Java 
-            heap dump analysis to find and fix memory leaks
-        \item Collaborated with the Machine Learning team to build random
-            sampling for aggregations
-        \item Conducted technical interviews for Senior and Principal level
-		engineering roles
-        \item Wrote a
-            \href{https://www.elastic.co/blog/how-elastic-traced-a-formatting-bug-in-elasticsearch}{blog
-            post} about finding a bug in the Java date formatting library.
-        \item Worked on developing a new query language, ESQL, and supporting
-            compute layer
-        \item Used Junit parametrized testing to build out a robust randomized
-            testing framework for ESQL scalar functions, which was used as the
-            model for later testing
+            the open}.  I also reviewed and merged community PRs as needed.
         \item Served as the Elasticsearch team point of contact for our merger
             with Optimyze, helping them move the application onto the Elastic
-            stack
-        \item Worked closely with Product Managment team to plan, scope, and
-            estimate features
+            stack.
+        \item Responded to production incidents in Elastic's managed cloud, 
+            as part of a 24/7 on call rotation.
+        \item Wrote and reviewed technical design documents as part of a 
+            cross team collaboration process.
+        \item Mentored new hires and other co-workers as part of a formal 
+            mentoring program.
+        \item Wrote detailed JavaDoc and internal documentation which was used
+            by other developers as AI Agent formulas for complex coding tasks.
+        \item Responded to support escalations and incidents, including Java 
+            heap dump analysis to find and fix memory leaks.
+        \item Conducted technical interviews for Senior and Principal level
+            engineering roles.
+        \item Published a
+            \href{https://www.elastic.co/blog/how-elastic-traced-a-formatting-bug-in-elasticsearch}{technical blog
+            post} detailing a deep dive into debugging a date formatting bug in Java.
+        \item Used Elastic's custom benchmarking tool (\href{https://github.com/elastic/rally}{rally})
+            to performance test changes and investigate regressions.
+        \item Worked closely with Product Management team to plan, scope, and
+            estimate features.
     \end{itemize}
 {\bf Platform Developer (Remote)}\\
     Rocana, Inc.\hfill 2015--2017
 \begin{itemize}
     \item Worked on distributed full text search system using time sharded
-        Lucene indexes stored in HDFS
+        Lucene indexes stored in HDFS.
     \item Built and debugged ETL pipeline to ingest records from Kafka
-        and index them into Lucene
+        and index them into Lucene.
     \item Worked with documentation team lead to produce both customer facing
-        and internal documentation for every release
+        and internal documentation for every release.
     \item Used both code analysis and log analysis techniques to debug subtle
-        threading issues in highly multi-threaded, callback based, architecture
+        threading issues in highly multi-threaded, callback based, architecture.
     \item Worked with customer support to resolve tier 3 escalations, and
-        communicate with customers
+        communicate with customers.
 \end{itemize}
 
 {\bf Senior Developer (Remote)}\\
     Keep.com (Part of Keep Holdings, Inc) \hfill 2012--2015
 \begin{itemize}
-  \item Worked remotely in small team environment to develop and support
-      consumer facing web applications for New York based startup
   \item Initiated web crawler project and grew it to a team of 4, crawling
     over 1 million pages twice a day, using Celery and Flask to manage job
-    requests and returning data
+    requests and returning data.
   \item Built machine learning models and web scraping tools using
     scikit-learn and beautiful soup to analyze and extract information from
-    retailer websites and emails
+    retailer websites and emails.
   \item Led successful effort to integrate Etsy's Statsd system as a central
-    broker for tracking internal metrics
+    broker for tracking internal metrics.
   \item Migrated from pure Redis backend to hybrid Redis/Postgres backend,
-      with no data loss and minimal downtime
+      with no data loss and minimal downtime.
   \item Practiced Test Driven Development (TDD) to dramatically lower the
       defect rate in released code.  Converted several other team members to
-      the TDD methodology
-  \item Mentored team members in code style and design
+      the TDD methodology.
+  \item Mentored team members in code style and design.
 \end{itemize}
 
 {\bf Senior Analytics Engineer (Remote)}\\
 Adkeeper Networks (Part of Keep Holdings, Inc) \hfill  2010--2012
 \begin{itemize}
   \item Built batch processing analytics system based on Hadoop, using Pig
-      scripts for ETL operations
-  \item Maintained suite of junit-based integration tests for import and
-      export of data
+      scripts for ETL operations.
+  \item Maintained suite of JUnit-based integration tests for import and
+      export of data.
   \item Diagnosed and helped to solve operational problems with delivery of
-      tens of gigabytes of log data from several systems
+      tens of gigabytes of log data from several systems.
 \end{itemize}
 
 {\bf Developer}\\
 About.com, New York, NY \hfill  2006--2010
 \begin{itemize}
   \item Supported a site usage tracking system which processed
-    over 60 Gigabytes of data daily from 90 servers in 3 data centers
+    over 60 Gigabytes of data daily from 90 servers in 3 data centers.
   \item Designed and implemented a new metrics system using the Apache
     Hadoop framework, Apache Hive, and MapReduce to feed data into a MySQL data
-    warehouse
-  \item Supported over 600 users across three divisions
+    warehouse.
+  \item Supported over 600 users across three divisions.
 \end{itemize}
 
 \section{Education}
-Bachelor of Science in Computer Science, Polytechnic University, Brooklyn New
+Bachelor of Science in Computer Science, Polytechnic University, Brooklyn, New
 York, 2003
 
 \end{resume}
